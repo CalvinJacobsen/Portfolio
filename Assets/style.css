@@ -1,7 +1,8 @@
 /* sets background images for each html page */
+
 .aboutBody {
     background-image: url('websiteImages/aboutBG.jpg');
-    background-repeat: repeat;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -11,59 +12,91 @@
 }
 
 .portfolioBody {
+    margin-top: 80px;
     background-image: url('websiteImages/portfolioBG.gif');
     background-repeat: repeat;
 }
 
 /* index (mainpage) css */
 
-.containerMain {
-    margin: 80px auto auto auto;
-    max-width: 540px;
-    padding: 17px;
-    border: 10px double rgba(245, 120, 228, 0.979);
-    background-color: rgba(51, 51, 51, 0.959);
-    color: rgb(12, 221, 221);
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.profileIMG {
-    margin: 125px auto auto auto;
-    border: 10px inset rgba(74, 234, 255, 0.979);
+.navbar {
+    background-color: transparent !important;
+    color: rgb(51, 45, 13) !important;
 }
 
-.containerBottomR {
-    margin: 25px auto auto auto;
-    padding: 10px;
-    border: 10px double rgba(255, 252, 74, 0.979);
-    background-color: rgba(51, 51, 51, 0.945);
-    color: rgb(221, 12, 186);
-}
-
-.containerBottomL {
-    margin: 125px auto auto auto;
-    padding: 10px;
-    font-size: 16px;
-    border: 10px double rgba(74, 234, 255, 0.979);
-    background-color: rgba(51, 51, 51, 0.945);
-    color: rgb(243, 247, 39);
-}
-
-    /* portfolio font for mainpage */
-.portFont {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 26px;
-    color:rgb(12, 221, 221);
+.navbar-nav {
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     font-style: italic;
 }
 
-    /* textwrap for mainpage containers */
+.nav-item {
+    backdrop-filter: brightness(80%);
+    color: black !important;
+    padding: 0px 8px 0px 5px;
+    margin-right: 4px;
+    border: solid 1px rgb(37, 37, 37);
+    border-radius: 2px;
+    transition: all 300ms ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.profileIMG {
+    left: 100px;
+    top: 238px;
+    position: relative;
+    border-radius: 3%;
+    border: 7px solid rgba(36, 36, 36, 0.9);
+    z-index: 100;
+}
+
+.containerMain {
+    font-weight: 400;
+    position: relative;
+    background-color: rgba(51, 51, 51, 0.856);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    text-align: center;
+    font-size: 20px;
+    max-height: 400px;
+    max-width: 800px;
+    padding: 18px;
+    border: 7px solid rgba(36, 36, 36, 0.979);
+    border-radius: 5px;
+    color: rgb(233, 219, 140);
+}
+
+.index-footer {
+    margin: 10px;
+    display: inline-block;
+    position: fixed;
+    text-align: center;
+    font-size: 16px;
+}
+
+svg {
+    margin: 5px;
+}
+
+/* textwrap for mainpage containers */
+
 .textWrap {
     float: right;
     margin: 10px;
     margin-left: 30px;
 }
 
-.textWrapLeft{
+.textWrapLeft {
     float: left;
     margin: 30px;
     margin-right: 60px;
@@ -74,16 +107,19 @@
     margin: 10px 15px 20px 15px;
     max-width: 95%;
     max-height: 100%;
-    display: block; /* remove extra space below image */
+    display: block;
+    /* remove extra space below image */
     position: relative;
 }
 
-    /* animation for hover over text */
+/* animation for hover over text */
+
 .orangeBoy:hover {
     background-color: green;
 }
 
 /* contactform css*/
+
 .contactContainer {
     max-width: 500px;
     padding: 15px;
@@ -93,6 +129,7 @@
     margin: 125px auto auto auto;
     color: rgb(240, 240, 240);
 }
+
 .contactContainerR {
     max-width: 500px;
     padding: 15px;
@@ -101,37 +138,37 @@
     margin: 125px auto auto auto;
     color: rgb(240, 240, 240);
 }
-    /*code for send button animation */
+
+/*code for send button animation */
+
 .sendbuttonPre {
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    top: 0;
     left: 0;
     opacity: 100;
     z-index: 3;
 }
+
 .sendbuttonPre:hover {
     opacity: 0;
     z-index: 1;
 }
 
-.sendbutton{
-    position: absolute; 
-    top: 0; 
+.sendbutton {
+    position: absolute;
+    top: 0;
     left: 0;
     opacity: 0;
     z-index: 2;
 }
+
 .sendbutton:hover {
     background-image: url("contactpageIMG/email.gif");
     opacity: 100;
     z-index: 3;
 }
 
-.container {
-    margin-top: 90px;
-}
-
-.footer {
+.contact-footer {
     position: fixed;
     left: -10px;
     bottom: -10px;
@@ -141,9 +178,10 @@
     color: rgb(128, 128, 128);
     text-align: center;
     font-size: 16px;
-  }
+}
 
 /* portfolio.html css code */
+
 .portfolioContainer {
     margin-bottom: 40px;
     padding: 15px;
@@ -152,8 +190,8 @@
     color: rgb(155, 88, 146);
     font-family: 'Comic Neue', cursive;
 }
+
 .resumeContainer {
-    
     padding: 20px;
     min-width: fit-content;
     border: 8px ridge rgba(120, 199, 245, 0.979);
@@ -189,12 +227,12 @@
 }
 
 .portImageContainer2 {
-    border: ridge rgb(64, 185, 255) 8px;
+    border: ridge #389393 8px;
     margin-bottom: 8px;
 }
 
 .portImageContainer3 {
-    border: ridge rgb(77, 77, 77) 8px;
+    border: ridge rgb(64, 185, 255) 8px;
     margin-bottom: 8px;
 }
 
@@ -204,16 +242,4 @@
 
 .blur:hover {
     filter: blur(0px);
-}
-
-.sailorTalk {
-    position:absolute;
-    padding: 0px 22px 0px 30px;
-    left: 38%;
-    top:2.5%;
-    font-size: large;
-    font-family: 'Comic Neue', cursive;
-    color: black;
-    overflow: hidden;
-    
 }
