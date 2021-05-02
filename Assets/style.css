@@ -1,26 +1,14 @@
-/* sets background images for each html page */
-
 .aboutBody {
     background-image: url('websiteImages/aboutBG.jpg');
     background-size: cover;
     overflow-x: hidden;
 }
 
-.contactBody {
-    background-image: url('websiteImages/contactBG.png');
-    background-repeat: repeat;
-}
-
-.portfolioBody {
-    margin-top: 80px;
-    background-image: url('websiteImages/portfolioBG.gif');
-    background-repeat: repeat;
-}
-
-/* index (mainpage) css */
-
 body {
+    background-image: url('websiteImages/aboutBG.jpg');
     font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -29,7 +17,7 @@ body {
 }
 
 .navbar-nav {
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 0px 0px;
     padding: 5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -37,6 +25,8 @@ body {
 }
 
 .nav-item {
+    margin-top: 15px;
+    font-weight: 400;
     backdrop-filter: brightness(80%);
     color: black !important;
     padding: 0px 8px 0px 5px;
@@ -54,8 +44,8 @@ body {
     left: 100px;
     top: 238px;
     position: relative;
-    border-radius: 3%;
-    border: 7px solid rgba(36, 36, 36, 0.9);
+    border-radius: 2px;
+    border: 5px solid rgba(36, 36, 36, 0.9);
     z-index: 100;
 }
 
@@ -63,6 +53,7 @@ body {
     font-weight: 400;
     position: relative;
     background-color: rgba(51, 51, 51, 0.856);
+    color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top: 12%;
@@ -71,9 +62,8 @@ body {
     max-height: 400px;
     max-width: 800px;
     padding: 18px;
-    border: 7px solid rgba(36, 36, 36, 0.979);
-    border-radius: 5px;
-    color: rgb(233, 219, 140);
+    border: 5px solid rgba(36, 36, 36, 0.979);
+    border-radius: 2px;
 }
 
 .index-footer {
@@ -88,52 +78,27 @@ svg {
     margin: 5px;
 }
 
-/* textwrap for mainpage containers */
-
-.textWrap {
-    float: right;
-    margin: 10px;
-    margin-left: 30px;
-}
-
-.textWrapLeft {
-    float: left;
-    margin: 30px;
-    margin-right: 60px;
-    margin-top: 40px;
-}
-
-.breaker {
-    margin: 10px 15px 20px 15px;
-    max-width: 95%;
-    max-height: 100%;
-    display: block;
-    /* remove extra space below image */
-    position: relative;
-}
-
-/* animation for hover over text */
-
-.orangeBoy:hover {
-    background-color: green;
-}
-
 /* contactform css*/
 
+.contact-page{
+    margin-top: 70px;
+}
 .contactContainer {
-    max-width: 500px;
+    max-width: 450px;
     padding: 15px;
     padding-bottom: 80px;
-    border: 8px inset rgb(134, 235, 168);
+    border: 5px solid rgba(36, 36, 36, 0.979);
+    border-radius: 2px;
     background-color: rgba(51, 51, 51, 0.781);
-    margin: 125px auto auto auto;
+    margin: 125px 0px auto auto;
     color: rgb(240, 240, 240);
 }
 
 .contactContainerR {
     max-width: 500px;
     padding: 15px;
-    border: 8px inset rgb(134, 235, 168);
+    border: 5px solid rgba(36, 36, 36, 0.979);
+    border-radius: 2px;
     background-color: rgba(51, 51, 51, 0.781);
     margin: 125px auto auto auto;
     color: rgb(240, 240, 240);
@@ -168,78 +133,28 @@ svg {
     z-index: 3;
 }
 
-.contact-footer {
-    position: fixed;
-    left: -10px;
-    bottom: -10px;
-    width: 105%;
-    border: inset 6px rgb(134, 235, 168);
-    background-color: rgba(54, 54, 54, 0.829);
-    color: rgb(128, 128, 128);
-    text-align: center;
-    font-size: 16px;
-}
-
 /* portfolio.html css code */
 
 .portfolioContainer {
-    margin-bottom: 40px;
-    padding: 15px;
-    border: 8px ridge rgba(245, 120, 228, 0.979);
-    background-color: rgba(198, 245, 252, 0.8);
-    color: rgb(155, 88, 146);
-    font-family: 'Comic Neue', cursive;
-}
-
-.resumeContainer {
-    padding: 20px;
-    min-width: fit-content;
-    border: 8px ridge rgba(120, 199, 245, 0.979);
-    background-color: rgba(245, 204, 255, 0.8);
-    font-family: 'Comic Neue', cursive;
-    color: rgb(36, 100, 143);
+    font-weight: 400;
+    margin-top: 80px;
+    padding: 15px 0px 15px 0px;
+    font-size: 40px;
     text-align: center;
-}
-
-.leftCharContainer {
-    left: -13%;
-    overflow: hidden;
-}
-
-.rightCharContainer {
-    left: 14%;
-    overflow: hidden;
+    border-radius: 2px;
+    border: 5px solid rgba(36, 36, 36, 0.9);
+    background-color: rgba(51, 51, 51, 0.856);
+    color: white;
 }
 
 .portfolioIMG {
-    height: 100%;
-    width: 100%;
+    display: inline-flexbox;
+    max-height: 230px;
+    border-radius: 2px;
+    border: 5px solid rgba(36, 36, 36, 0.9);
 }
 
-.portfolioImagesSection {
-    text-align: center;
-    color: black;
-}
-
-.portImageContainer1 {
-    border: ridge rgb(126, 40, 40) 8px;
-    margin-bottom: 8px;
-}
-
-.portImageContainer2 {
-    border: ridge #389393 8px;
-    margin-bottom: 8px;
-}
-
-.portImageContainer3 {
-    border: ridge rgb(64, 185, 255) 8px;
-    margin-bottom: 8px;
-}
-
-.blur {
-    filter: blur(2px);
-}
-
-.blur:hover {
-    filter: blur(0px);
+.techblog-btn {
+    border-color: #2b5757;
+    background-color: #357070;
 }
